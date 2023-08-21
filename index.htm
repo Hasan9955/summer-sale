@@ -168,9 +168,10 @@
         <section class="  ">
             <div class="px-5 py-10 mt-20 mb-10 bg-base-100 shadow-xl">
                 <h2>Have coupon?</h2>
+                <P>First write your coupon code here and then select the items</P>
                 <div class="flex mt-4">
                     <input id="promo-code" class="border-2 border-black-500" type="text" placeholder="Coupon code">
-                    <button id="apply-but" class="ml-5 border-2 p-2 rounded"
+                    <button id="apply-but" class=" bg-[#E527B2] font-semibold text-white btn ml-5 border-2 p-2 rounded"
                         disabled>Apply</button>
                 </div>
             </div>
@@ -191,7 +192,7 @@
 
 
                 <!-- Open the modal using ID.showModal() method -->
-                <button id="purchase-but" class="btn mt-10 bg-[#E527B2] font-semibold text-white" onclick="my_modal_5.showModal()">Make Purchase</button>
+                <button id="purchase-but" disabled class="btn mt-10 bg-[#E527B2] font-semibold text-white" onclick="my_modal_5.showModal()">Make Purchase</button>
                 <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
                     <form method="dialog" class="modal-box">
                         <div class="flex flex-col justify-center items-center">
@@ -200,7 +201,7 @@
                             <p class="py-4">Your Purchase the product</p>
                             <div class=" ">
                                 <!-- if there is a button in form, it will close the modal -->
-                                <button class="btn bg-[#E527B2] font-semibold text-white">Go Home</button>
+                                <button id="go-home" class="btn bg-[#E527B2] font-semibold text-white">Go Home</button>
                             </div>
                         </div>
                     </form>

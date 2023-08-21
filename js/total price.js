@@ -75,6 +75,14 @@ document.getElementById('first-card').addEventListener('click', function () {
 
 
 
+    if(finalTotal.innerText > 0 ){
+        const purchaseBut = document.getElementById('purchase-but')
+        purchaseBut.removeAttribute('disabled') 
+    }
+    else{
+        button.setAttribute('disabled', true);
+    }
+
 
 
 })
@@ -85,12 +93,6 @@ document.getElementById('first-card').addEventListener('click', function () {
 
 
 // when clicked second card
-
-
-
-
-
-
 
 
 document.getElementById('second-card').addEventListener('click', function () {
@@ -165,6 +167,15 @@ document.getElementById('second-card').addEventListener('click', function () {
 
     finalTotal.innerText = total
 
+
+
+    if(finalTotal.innerText > 0 ){
+        const purchaseBut = document.getElementById('purchase-but')
+        purchaseBut.removeAttribute('disabled') 
+    }
+    else{
+        button.setAttribute('disabled', true);
+    }
 
 })
 
@@ -252,6 +263,15 @@ document.getElementById('third-card').addEventListener('click', function () {
 
 
 
+    if(finalTotal.innerText > 0 ){
+        const purchaseBut = document.getElementById('purchase-but')
+        purchaseBut.removeAttribute('disabled') 
+    }
+    else{
+        button.setAttribute('disabled', true);
+    }
+
+
 })
 
 
@@ -335,6 +355,16 @@ document.getElementById('forth-card').addEventListener('click', function () {
 
 
     finalTotal.innerText = total
+
+
+
+    if(finalTotal.innerText > 0 ){
+        const purchaseBut = document.getElementById('purchase-but')
+        purchaseBut.removeAttribute('disabled') 
+    }
+    else{
+        button.setAttribute('disabled', true);
+    }
 
 
 })
@@ -421,6 +451,15 @@ document.getElementById('fivth-card').addEventListener('click', function () {
     finalTotal.innerText = total
 
 
+
+    if(finalTotal.innerText > 0 ){
+        const purchaseBut = document.getElementById('purchase-but')
+        purchaseBut.removeAttribute('disabled') 
+    }
+    else{
+        button.setAttribute('disabled', true);
+    }
+
 })
 
 
@@ -505,6 +544,14 @@ document.getElementById('sixth-card').addEventListener('click', function () {
 
 
     finalTotal.innerText = total
+    
+    if(finalTotal.innerText > 0 ){
+        const purchaseBut = document.getElementById('purchase-but')
+        purchaseBut.removeAttribute('disabled') 
+    }
+    else{
+        button.setAttribute('disabled', true);
+    }
 
 
 })
@@ -518,3 +565,8 @@ document.getElementById('sixth-card').addEventListener('click', function () {
 
     }
 }) */
+
+
+document.getElementById('go-home').addEventListener('click', function(){
+    location.reload(true) 
+})
