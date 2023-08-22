@@ -34,24 +34,8 @@ document.getElementById('first-card').addEventListener('click', function () {
 
 
     const button = document.getElementById('apply-but')
-    if (promoCode === 'SELL200' & totalNo >= 200) {
-        button.removeAttribute('disabled')
-        button.addEventListener('click', function () {
-            const yourDiscount = Math.round(totalNo * 0.2)
 
-            discountTotal.innerText = yourDiscount
-            
-
-            const total = totalNo - yourDiscount
-
-
-            finalTotal.innerText = total
-        })
-
-    }
-    else {
-        button.setAttribute('disabled', true);
-    }
+    
 
 
     const discountTotal = document.getElementById('discount')
@@ -75,11 +59,11 @@ document.getElementById('first-card').addEventListener('click', function () {
 
 
 
-    if(finalTotal.innerText > 0 ){
+    if (finalTotal.innerText > 0) {
         const purchaseBut = document.getElementById('purchase-but')
-        purchaseBut.removeAttribute('disabled') 
+        purchaseBut.removeAttribute('disabled')
     }
-    else{
+    else {
         button.setAttribute('disabled', true);
     }
 
@@ -129,24 +113,7 @@ document.getElementById('second-card').addEventListener('click', function () {
 
 
     const button = document.getElementById('apply-but')
-    if (promoCode === 'SELL200' & totalNo >= 200) {
-        button.removeAttribute('disabled')
-        button.addEventListener('click', function () {
-            const yourDiscount = Math.round(totalNo * 0.2)
-
-            discountTotal.innerText = yourDiscount
-            
-
-            const total = totalNo - yourDiscount
-
-
-            finalTotal.innerText = total
-        })
-
-    }
-    else {
-        button.setAttribute('disabled', true);
-    }
+    
 
 
     const discountTotal = document.getElementById('discount')
@@ -169,11 +136,11 @@ document.getElementById('second-card').addEventListener('click', function () {
 
 
 
-    if(finalTotal.innerText > 0 ){
+    if (finalTotal.innerText > 0) {
         const purchaseBut = document.getElementById('purchase-but')
-        purchaseBut.removeAttribute('disabled') 
+        purchaseBut.removeAttribute('disabled')
     }
-    else{
+    else {
         button.setAttribute('disabled', true);
     }
 
@@ -223,24 +190,7 @@ document.getElementById('third-card').addEventListener('click', function () {
 
 
     const button = document.getElementById('apply-but')
-    if (promoCode === 'SELL200' & totalNo >= 200) {
-        button.removeAttribute('disabled')
-        button.addEventListener('click', function () {
-            const yourDiscount = Math.round(totalNo * 0.2)
-
-            discountTotal.innerText = yourDiscount
-            
-
-            const total = totalNo - yourDiscount
-
-
-            finalTotal.innerText = total
-        })
-
-    }
-    else {
-        button.setAttribute('disabled', true);
-    }
+    
 
 
     const discountTotal = document.getElementById('discount')
@@ -263,11 +213,11 @@ document.getElementById('third-card').addEventListener('click', function () {
 
 
 
-    if(finalTotal.innerText > 0 ){
+    if (finalTotal.innerText > 0) {
         const purchaseBut = document.getElementById('purchase-but')
-        purchaseBut.removeAttribute('disabled') 
+        purchaseBut.removeAttribute('disabled')
     }
-    else{
+    else {
         button.setAttribute('disabled', true);
     }
 
@@ -318,25 +268,7 @@ document.getElementById('forth-card').addEventListener('click', function () {
 
 
     const button = document.getElementById('apply-but')
-    if (promoCode === 'SELL200' & totalNo >= 200) {
-        button.removeAttribute('disabled')
-        button.addEventListener('click', function () {
-            const yourDiscount = Math.round(totalNo * 0.2)
-
-            discountTotal.innerText = yourDiscount
-            
-
-            const total = totalNo - yourDiscount
-
-
-            finalTotal.innerText = total
-        })
-
-    }
-    else {
-        button.setAttribute('disabled', true);
-    }
-
+    
 
     const discountTotal = document.getElementById('discount')
     const discountTotalString = discountTotal.innerText
@@ -358,11 +290,11 @@ document.getElementById('forth-card').addEventListener('click', function () {
 
 
 
-    if(finalTotal.innerText > 0 ){
+    if (finalTotal.innerText > 0) {
         const purchaseBut = document.getElementById('purchase-but')
-        purchaseBut.removeAttribute('disabled') 
+        purchaseBut.removeAttribute('disabled')
     }
-    else{
+    else {
         button.setAttribute('disabled', true);
     }
 
@@ -412,24 +344,7 @@ document.getElementById('fivth-card').addEventListener('click', function () {
 
 
     const button = document.getElementById('apply-but')
-    if (promoCode === 'SELL200' & totalNo >= 200) {
-        button.removeAttribute('disabled')
-        button.addEventListener('click', function () {
-            const yourDiscount = Math.round(totalNo * 0.2)
-
-            discountTotal.innerText = yourDiscount
-            
-
-            const total = totalNo - yourDiscount
-
-
-            finalTotal.innerText = total
-        })
-
-    }
-    else {
-        button.setAttribute('disabled', true);
-    }
+    
 
 
     const discountTotal = document.getElementById('discount')
@@ -452,11 +367,11 @@ document.getElementById('fivth-card').addEventListener('click', function () {
 
 
 
-    if(finalTotal.innerText > 0 ){
+    if (finalTotal.innerText > 0) {
         const purchaseBut = document.getElementById('purchase-but')
-        purchaseBut.removeAttribute('disabled') 
+        purchaseBut.removeAttribute('disabled')
     }
-    else{
+    else {
         button.setAttribute('disabled', true);
     }
 
@@ -498,33 +413,14 @@ document.getElementById('sixth-card').addEventListener('click', function () {
 
 
     // promo code use
-    
+
 
     const promoCodeU = document.getElementById('promo-code')
     const promoCode = promoCodeU.value
 
 
     const button = document.getElementById('apply-but')
-    if ( totalNo >= 200 & promoCode === 'SELL200') {
-        
-        button.removeAttribute('disabled') 
-        
-        button.addEventListener('click', function () {
-            const yourDiscount = Math.round(totalNo * 0.2)
-
-            discountTotal.innerText = yourDiscount
-            
-
-            const total = totalNo - yourDiscount
-
-
-            finalTotal.innerText = total
-        })
-
-    }
-    else {
-        button.setAttribute('disabled', true);
-    }
+    
 
 
     const discountTotal = document.getElementById('discount')
@@ -544,12 +440,12 @@ document.getElementById('sixth-card').addEventListener('click', function () {
 
 
     finalTotal.innerText = total
-    
-    if(finalTotal.innerText > 0 ){
+
+    if (finalTotal.innerText > 0) {
         const purchaseBut = document.getElementById('purchase-but')
-        purchaseBut.removeAttribute('disabled') 
+        purchaseBut.removeAttribute('disabled')
     }
-    else{
+    else {
         button.setAttribute('disabled', true);
     }
 
@@ -558,15 +454,57 @@ document.getElementById('sixth-card').addEventListener('click', function () {
 
 
 
-/* document.getElementById('purchase-but').addEventListener('click',function(){
-    const finalTotal = document.getElementById('total-final')
-
-    if (finalTotal>0){
-
-    }
+/* document.getElementById('promo-code').addEventListener('keyup', function (event) {
+    console.log(event.value)
 }) */
 
 
-document.getElementById('go-home').addEventListener('click', function(){
-    location.reload(true) 
+document.getElementById('go-home').addEventListener('click', function () {
+    location.reload(true)
+})
+
+
+document.getElementById('promo-code').addEventListener('keyup', function (event) {
+    const text = event.target.value
+
+
+    const button = document.getElementById('apply-but')
+    if (text === 'SELL200') {
+        button.removeAttribute('disabled')
+    }
+    else {
+        button.setAttribute('disabled', true);
+    }
+})
+
+
+document.getElementById('apply-but').addEventListener('click', function () {
+
+
+    const priceTotal = document.getElementById('total-price')
+    const priceTotalString = priceTotal.innerText
+    const priceTotalNumber = parseFloat(priceTotalString)
+
+    const discountTotal = document.getElementById('discount')
+
+    const finalTotal = document.getElementById('total-final')
+
+    if (priceTotalNumber >= 200) {
+        
+        const yourDiscount = Math.round(priceTotalNumber * 0.2)
+
+        discountTotal.innerText = yourDiscount
+
+
+        const total = priceTotalNumber - yourDiscount
+
+
+        finalTotal.innerText = total
+
+        /* const inputPromo = document.getElementById('promo-code')
+        inputPromo.value = ''; */
+    }
+    else {
+        alert("Purchase 200tk or above and get 20% discount!!!")
+    }
 })
