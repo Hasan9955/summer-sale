@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" oncontextmenu="return false" controls>
 
 <head>
     <meta charset="UTF-8">
@@ -10,7 +10,7 @@
 
 </head>
 
-<body>
+<body onselectstart="return false">
 
     <header class="flex gap-20 flex-col-reverse md:flex-row justify-center items-center bg-[#F9F6E2] ">
         <div class="flex flex-col items-center text-center">
@@ -37,9 +37,9 @@
 
 
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
-                    <div id="first-card" class=" flex flex-col justify-center items-center bg-base-100 shadow-xl ">
+                    <div id="first-card" class="md:py-8  flex flex-col justify-center items-center bg-base-100 shadow-xl ">
                         <div class=" bg-[#f6e1e1c8] rounded ">
-                            <img  src="images/prod1.png" alt="">
+                            <img src="images/prod1.png" alt="">
                         </div>
                         <div class="mt-5 text-center items-center justify-center">
                             <div class="rating">
@@ -56,7 +56,7 @@
 
 
 
-                    <div id="second-card" class=" flex
+                    <div id="second-card" class="md:py-8  flex
                 flex-col justify-center items-center bg-base-100 shadow-xl ">
                         <div class=" bg-[#f6e1e1c8] rounded ">
                             <img src="images/prod2.png" alt="">
@@ -75,7 +75,7 @@
                     </div>
 
 
-                    <div id="third-card" class=" flex
+                    <div id="third-card" class="md:py-8   flex
                 flex-col justify-center items-center bg-base-100 shadow-xl ">
                         <div class=" bg-[#f6e1e1c8] rounded ">
                             <img src="images/prod3.png" alt="">
@@ -169,7 +169,7 @@
         <section class="  ">
             <div class="px-5 py-10 mt-20 mb-10 bg-base-100 shadow-xl">
                 <h2>Have coupon?</h2>
-                <P>First write your coupon code here and then select the items</P>
+
                 <div class="flex mt-4">
                     <input id="promo-code" class="border-2 border-black-500" type="text" placeholder="Coupon code">
                     <button id="apply-but" class=" bg-[#E527B2] font-semibold text-white btn ml-5 border-2 p-2 rounded"
@@ -193,7 +193,8 @@
 
 
                 <!-- Open the modal using ID.showModal() method -->
-                <button id="purchase-but" disabled class="btn mt-10 bg-[#E527B2] font-semibold text-white" onclick="my_modal_5.showModal()">Make Purchase</button>
+                <button id="purchase-but" disabled class="btn mt-10 bg-[#E527B2] font-semibold text-white"
+                    onclick="my_modal_5.showModal()">Make Purchase</button>
                 <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
                     <form method="dialog" class="modal-box">
                         <div class="flex flex-col justify-center items-center">
@@ -213,8 +214,65 @@
     </main>
 
     <script src="js/total price.js"></script>
+    
 
 
+    <!-- <script>
+        $(document).ready(function() {
+            document.onkeydown = function(e){
+                if (e.ctrlKey &&
+                    (e.keyCode === 67 ||
+                        e.keyCode === 86 ||
+                        e.keyCode === 85 ||
+                        e.keyCode === 117)) {
+                    return false;
+                } else {
+                    return true;
+                }
+            };
+        });
+        </script>-->
+    <!-- <script>
+        document.onkeyup = function (e) {
+            if (e.which == 77) {
+                alert("M key was pressed");
+            }
+            else if (e.ctrlKey && e.which == 66) {
+                alert("Ctrl + B shortcut combination was pressed");
+            }
+            else if (e.ctrlKey && e.which == 85) {
+                alert("Ctrl + B shortcut combination was pressed");
+            }
+            else if (e.ctrlKey && e.altKey && e.which == 89) {
+                alert("Ctrl + Alt + Y shortcut combination was pressed");
+            }
+            else if (e.ctrlKey && e.altKey && e.shiftKey && e.which == 85) {
+                alert("Ctrl + Alt + Shift + U shortcut combination was pressed");
+            }
+        };
+    </script> -->
+
+
+    <script>
+        document.onkeydown = function (e) {
+            if (e.keyCode == 123) {
+                return false;
+            }
+            if (e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)) {
+                return false;
+            }
+            if (e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)) {
+                return false;
+            }
+            if (e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)) {
+                return false;
+            }
+
+            if (e.ctrlKey && e.shiftKey && e.keyCode == 'C'.charCodeAt(0)) {
+                return false;
+            }
+        }
+    </script>
 </body>
 
 </html>
